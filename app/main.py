@@ -16,3 +16,6 @@ async def always_ok():
     logger.info("Service C respondió exitosamente (fallback)")
     return {"message": "Hola desde C, soy el backup de B"}
 
+@app.get("/health")
+async def health_check():
+    return {"status": "ok", "service": "C"}
