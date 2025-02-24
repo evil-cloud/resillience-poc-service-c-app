@@ -5,6 +5,7 @@ from datetime import datetime, timezone
 from prometheus_fastapi_instrumentator import Instrumentator
 
 # Configurar logging con formato JSON estructurado
+
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("service-c")
 
